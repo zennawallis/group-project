@@ -8,15 +8,15 @@ using System.Collections.Generic;
 namespace Astorids
 {
     /// <summary>
-    /// This is the main type for your game.
+    /// This is the main type for your game.C:\Users\jack.hassett\Desktop\JackHasset Asteroids\MyTestGame\MyTestGame\Program.cs
     /// </summary>
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         private Song backroundMusic;
-        
-        
+
+
         //Texture2D shipTexture;
         //Vector2 shipPosition;
         //Vector2 shipVelocity;
@@ -43,6 +43,12 @@ namespace Astorids
             public Vector2 Size;
             public Vector2 MaxLimit;
             public Vector2 MinLimit;
+            public float MaxSpeed = 3;
+
+            public float FireRate = 2f;
+            public bool Saber = false;
+
+            public float Range = 75;
 
             public bool Visible;
             public bool Vulnerable;
@@ -78,7 +84,7 @@ namespace Astorids
 
         }
 
-        
+
 
         class AsteroidClass
         {
@@ -99,7 +105,7 @@ namespace Astorids
             public Vector2 Position;
             public Vector2 Velocity;
             public float Rotation;
-
+            public int Timer = 1;
             public Vector2 Size;
 
             public Vector2 MaxLimit;
@@ -149,11 +155,12 @@ namespace Astorids
 
         public Texture2D AsteroidTexture;
         List<AsteroidClass> MyAsteroids;
-        const int NUM_ASTEROIDS = 10;
+        const int NUM_ASTEROIDS = 2;
+        
         Random RandNum;
 
         ShipClass Ship;
-        int PlayerLives = 3;
+        int PlayerLives = 10;
         SpriteFont ScoreText;
         SpriteFont GameOverText;
         Texture2D backgroundTexture;
@@ -192,7 +199,7 @@ namespace Astorids
 
         public void ShipInitialise()
         {
-            
+
 
             Ship.Position = new Vector2(
                 graphics.PreferredBackBufferWidth / 2
@@ -249,9 +256,9 @@ namespace Astorids
         {
             AsteroidClass Asteroid = new AsteroidClass();
             Asteroid.Position = new Vector2(RandNum.Next(graphics.PreferredBackBufferWidth),
-                RandNum.Next(graphics.PreferredBackBufferHeight));
+                RandNum.Next(10));
             Asteroid.Velocity = new Vector2(RandNum.Next(-3, 3), RandNum.Next(-3, 3));
-            Asteroid.RotationDelta = RandNum.Next(3, 5);
+            Asteroid.RotationDelta = RandNum.Next(1, 3);
 
             int RandSize = RandNum.Next(32, 56);
             Asteroid.Size = new Vector2(RandSize, RandSize);
@@ -299,6 +306,16 @@ namespace Astorids
                 {
                     bool MissleCollisionCheck = CricleCollisionCheck(Missle.Position, Missle.Size.X / 2,
                         Asteroid.Position, Asteroid.Size.X / 2);
+                  
+                        Missle.Timer ++;
+
+                    Missle.Position = WrapScreen(Missle.Position);
+                    
+                    if (Missle.Timer > 75)
+                    {
+                        MissleDeathRow.Add(Missle);
+                    } 
+
 
                     if (MissleCollisionCheck)
                     {
@@ -313,15 +330,15 @@ namespace Astorids
             foreach (AsteroidClass Asteroid in AsteroidDeathRow)
             {
                 MyAsteroids.Remove(Asteroid);
-                CreateAsteroid();
-                
+               CreateAsteroid();
+
             }
             foreach (MissleClass Missle in MissleDeathRow)
             {
                 MyMissles.Remove(Missle);
             }
 
-          
+
 
         }
         protected void CreateExplosion(Vector2 SpawnPosition, ExplosionType SpawnedExplosionType)
@@ -380,13 +397,13 @@ namespace Astorids
         /// checking for collisions, gathering input, and playing audio.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        
+
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-           
+
             // TODO: Add your update logic here
             switch (gameState)
             {
@@ -410,8 +427,20 @@ namespace Astorids
 
         }
 
+        public bool Toggle(bool Var)
+        {
+            
+            if( Var == true)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
 
-        
+        }
+
         public void RestartUpdate(GameTime gameTime)
         {
             StartGame();
@@ -423,7 +452,7 @@ namespace Astorids
         {
             float delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            if (Ship.Dead && Ship.m_invulnerableTime == 1f)
+            if (Ship.Dead && Ship.m_invulnerableTime == 10f)
             {
                 Ship.m_invulnerableTimer = Ship.m_invulnerableTime;
                 Ship.m_respawnTimer = Ship.m_respawnTime;
@@ -458,24 +487,51 @@ namespace Astorids
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
-                Ship.Acceleration = 0.05f;
+                Ship.Acceleration = 0.10f;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
             {
-                Ship.RotationDelta = -0.05f;
+                Ship.RotationDelta = -0.10f;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
             {
-                Ship.RotationDelta = 0.05f;
+                Ship.RotationDelta = 0.10f;
             }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.F))
+            {
+                Toggle(Ship.Saber);
+            }
+
+
+            if (Ship.Saber = true)
+            {
+               
+            }
+             else
+            {
+                
+            }
+
+
+
+
 
             Ship.Rotation += Ship.RotationDelta;
 
+            Ship.Velocity = Ship.Velocity / 1.02f;
+            
 
             Matrix playerRotationMatrix = Matrix.CreateRotationZ(Ship.Rotation);
 
             Ship.Velocity += Vector2.Transform(new Vector2(0, Ship.Acceleration)
                 , playerRotationMatrix);
+            float speed = Ship.Velocity.Length();
+            if (speed > Ship.MaxSpeed){
+                Ship.Velocity.Normalize();
+                Ship.Velocity = Ship.Velocity * Ship.MaxSpeed;
+            }
+            
 
             Ship.Position += Ship.Velocity;
 
@@ -501,23 +557,7 @@ namespace Astorids
             {
                 Asteroid.Rotation += Asteroid.RotationDelta;
                 Asteroid.Position += Asteroid.Velocity;
-                if (Asteroid.Position.X > Asteroid.MaxLimit.X)
-                {
-                    Asteroid.Position.X = Asteroid.MinLimit.X;
-                }
-                else if (Asteroid.Position.X < Asteroid.MinLimit.X)
-                {
-                    Asteroid.Position.X = Asteroid.MaxLimit.X;
-                }
-
-                if (Asteroid.Position.Y > Asteroid.MaxLimit.Y)
-                {
-                    Asteroid.Position.Y = Asteroid.MinLimit.Y;
-                }
-                else if (Asteroid.Position.Y < Asteroid.MinLimit.Y)
-                {
-                    Asteroid.Position.Y = Asteroid.MaxLimit.Y;
-                }
+                Asteroid.Position = WrapScreen(Asteroid.Position);
 
             }
 
@@ -533,13 +573,13 @@ namespace Astorids
                     Missle.Velocity.X *= 5;
                 }
             }
-
+            Ship.Position = WrapScreen(Ship.Position);
 
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 TimeSpan timeSincelastShot = gameTime.TotalGameTime - LastShot;
 
-                if (timeSincelastShot > ShotCoolDown)
+                if (timeSincelastShot.Milliseconds > (ShotCoolDown.Milliseconds * Ship.FireRate))
                 {
                     MissleClass Missle = new MissleClass();
 
@@ -576,7 +616,9 @@ namespace Astorids
                 Ship.Vulnerable = true;
             }
 
-
+            if (Ship.Acceleration > 1) {
+                Ship.Acceleration = 1;
+            }
 
 
 
@@ -589,9 +631,32 @@ namespace Astorids
                 gameOverTimer = 3.0f;
 
             }
-
-
         }
+    
+
+        public Vector2 WrapScreen(Vector2 position)
+        {
+            if (position.X < 0)
+            {
+                position.X = (graphics.GraphicsDevice.Viewport.Width - 0);
+            }
+            if (position.X > graphics.GraphicsDevice.Viewport.Width)
+            {
+                position.X = 0;
+            }
+            if (position.Y < 0)
+            {
+                position.Y = (graphics.GraphicsDevice.Viewport.Height - 0);
+            }
+            if (position.Y > graphics.GraphicsDevice.Viewport.Height)
+            {
+                position.Y = 0;
+            }
+            return position;
+        }
+
+    
+    
 
         public void PlayGameOverUpdate(GameTime gameTime)
         {
@@ -695,7 +760,7 @@ namespace Astorids
         {
             spriteBatch.Draw(backgroundTexture,
                    new Rectangle(0, 0, backgroundTexture.Width,
-                   backgroundTexture.Height), Color.White);
+                   backgroundTexture.Height), Color.Blue);
 
 
 
@@ -722,7 +787,7 @@ namespace Astorids
                 spriteBatch.Draw(AsteroidTexture,
                     Asteroid.Position,
                     null,
-                    Color.White,
+                    Color.LightYellow,
                     Asteroid.Rotation,
                     new Vector2(AsteroidTexture.Width / 2, AsteroidTexture.Height / 2),
                     new Vector2(Asteroid.Size.X / AsteroidTexture.Width, Asteroid.Size.Y / AsteroidTexture.Height),
