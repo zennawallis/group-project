@@ -44,9 +44,14 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AsteroidClass.cs" />
+    <Compile Include="ExplosionsClass.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="MissleClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShipClass.cs" />
+    <Compile Include="ShipClass2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
