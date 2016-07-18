@@ -36,3 +36,41 @@ C:\Users\jack.hassett\Desktop\group-project-master\Astorids\Astorids\bin\Windows
 C:\Users\jack.hassett\Desktop\group-project-master\Astorids\Astorids\obj\x86\Debug\Astorids.csprojResolveAssemblyReference.cache
 C:\Users\jack.hassett\Desktop\group-project-master\Astorids\Astorids\obj\x86\Debug\Astorids.exe
 C:\Users\jack.hassett\Desktop\group-project-master\Astorids\Astorids\obj\x86\Debug\Astorids.pdb
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Astorids.exe.config
+D:\AIE\Group project\group-project-master\Astorids\Astorids\obj\x86\Debug\Astorids.exe
+D:\AIE\Group project\group-project-master\Astorids\Astorids\obj\x86\Debug\Astorids.pdb
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\backroundSong.wma
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\backroundSong.xnb
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\asteroid.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\asteroid2.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\backroundSong.mp3
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\blue-space-1.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\bullet.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\explosion.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\explosion2.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\ship.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\ship2.png
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Content\scoreFont.xnb
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Astorids.exe
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\Astorids.pdb
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\MonoGame.Framework.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.XAudio2.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.DXGI.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D11.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct2D1.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.XInput.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.RawInput.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D9.dll
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\MonoGame.Framework.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.XAudio2.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.DXGI.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D11.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct2D1.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.XInput.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.RawInput.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D9.xml
+D:\AIE\Group project\group-project-master\Astorids\Astorids\obj\x86\Debug\Astorids.csprojResolveAssemblyReference.cache
