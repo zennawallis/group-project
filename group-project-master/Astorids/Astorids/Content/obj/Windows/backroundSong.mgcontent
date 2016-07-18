@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/AIE/Group project/group-project-master/Astorids/Astorids/Content/backroundSong.mp3</SourceFile>
-  <SourceTime>2016-07-06T19:24:12+09:30</SourceTime>
-  <DestFile>D:/AIE/Group project/group-project-master/Astorids/Astorids/Content/bin/Windows/backroundSong.xnb</DestFile>
-  <DestTime>2016-07-06T19:40:56+09:30</DestTime>
+  <SourceFile>C:/Users/jack.hassett/Desktop/group-project-master/Astorids/Astorids/Content/backroundSong.mp3</SourceFile>
+  <SourceTime>2016-07-06T19:02:21.8094769+09:30</SourceTime>
+  <DestFile>C:/Users/jack.hassett/Desktop/group-project-master/Astorids/Astorids/Content/bin/Windows/backroundSong.xnb</DestFile>
+  <DestTime>2016-07-06T19:03:20.5572869+09:30</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2016-03-22T08:22:00+10:30</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>D:/AIE/Group project/group-project-master/Astorids/Astorids/Content/bin/Windows/backroundSong.wma</string>
+    <string>C:/Users/jack.hassett/Desktop/group-project-master/Astorids/Astorids/Content/bin/Windows/backroundSong.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>
