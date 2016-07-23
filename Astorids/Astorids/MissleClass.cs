@@ -20,5 +20,6 @@ namespace Astorids
 
         public Vector2 MaxLimit;
         public Vector2 MinLimit;
+        public int player;
     }
 }

@@ -112,3 +112,41 @@ D:\AIE\Group project\Astorids\Astorids\bin\Windows\Debug\SharpDX.XInput.xml
 D:\AIE\Group project\Astorids\Astorids\bin\Windows\Debug\SharpDX.RawInput.xml
 D:\AIE\Group project\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D9.xml
 D:\AIE\Group project\Astorids\Astorids\obj\x86\Debug\Astorids.csprojResolveAssemblyReference.cache
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Astorids.exe.config
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\obj\x86\Debug\Astorids.exe
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\obj\x86\Debug\Astorids.pdb
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\backroundSong.wma
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\backroundSong.xnb
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\asteroid.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\asteroid2.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\backroundSong.mp3
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\blue-space-1.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\bullet.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\explosion.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\explosion2.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\ship.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\ship2.png
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Content\scoreFont.xnb
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Astorids.exe
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\Astorids.pdb
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\zenna.wallis\Documents\GroupProject\Astorids\Astorids\obj\x86\Debug\Astorids.csprojResolveAssemblyReference.cache
